@@ -13,7 +13,7 @@ parser.add_argument('--gpu_id', default="0", type=str, help='which gpu to run.')
 parser.add_argument('--suffix', default=['.png','.jpg','.tif'], type=list, help='the suffix of the image files.')
 parser.add_argument('--img_size', default=256, type=int, help='imagesize')
 parser.add_argument('--lr', type=float, default=0.0001, help='initial learning rate for adam')
-
+parser.add_argument('--lf', type=float, default=0.4, help='Loss factor')
 
 # path for loading data from folder
 parser.add_argument('--hr1_train', default='./train/time1', type=str, help='image at t1 in training set')
